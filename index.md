@@ -1,7 +1,6 @@
 ---
 layout: default
 title: VigilantStack
-permalink: /
 ---
 
 # Welcome to VigilantStack
