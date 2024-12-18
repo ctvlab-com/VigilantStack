@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ site.description | default: 'A clean and simple Jekyll theme' }}">
+    <meta name="author" content="{{ site.author | default: 'Your Name' }}">
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
@@ -13,14 +14,14 @@
             <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
             <nav>
                 <ul>
-                    <li><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li><a href="{{ site.baseurl }}/about">About</a></li>
-                    <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+                    {% for link in site.data.navigation %}
+                    <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="content">
         {{ content }}
     </main>
     <footer>
@@ -30,4 +31,3 @@
     </footer>
 </body>
 </html>
-
