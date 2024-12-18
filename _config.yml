@@ -2,3 +2,5 @@ title: VigilantStack
 author: Antwan Goggins
 description: Vigilant stack of security tools
 theme: minima
+baseurl: "/VigilantStack" # Repository name
+url: "https://ctvlab-com.github.io" # Your GitHub Pages URL
