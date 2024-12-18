@@ -1,5 +1,15 @@
-title: VigilantStack
-author: Antwan Goggins
-description: Vigilant stack of security tools
+title: "VigilantStack"
+author: "Antwan Goggins"
+description: "Vigilant stack of security tools"
 baseurl: "/VigilantStack" # Repository name
 url: "https://ctvlab-com.github.io" # Your GitHub Pages URL
+
+# Navigation links
+data_source: _data/navigation.yml
+
+plugins:
+  - jekyll-data
+
+# Other settings
+markdown: kramdown
+theme: minima
